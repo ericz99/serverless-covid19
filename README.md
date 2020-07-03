@@ -1,13 +1,22 @@
-## Serverless Covid19
+## Serverless COVID-19 API
 
 Realtime COVID-19 tracker API, since the pandemic I wanted to track each cases in realtime using serverless architecture, which will eliminate the need for server.
 
 ## Installation
 
+Before following any step below, be sure to have serverless connected to your AWS account, and all your crediential are ready before deploying this serverless application.
+
 1. In your preferred project directory, run `git clone https://github.com/ericz99/serverless-covid19.git .`.
-2. In your root directory please run `./deploy.sh` OR `bash deploy.sh` to install all necessary dependencies.
-3. By running `deploy.sh` it should first run through CI/CD Codepipeline to test all API endpoints, then automatically deploy the serverless application to the cloud.
-4. You should now have a fully functional serverless api application.
+2. In your root directory please run `npm install` to install all necessary dependencies.
+3. Finally, you can run `serverless deploy`.
+4. You should now have a fully functional serverless api application. Please redirect to the URL that is being displayed on your CLI.
+
+## Automating CI/CD Codepipeline
+
+If you're planning on using any CI/CD Codepipeline, then please follow the guide below.
+
+1. Please create an new IAM polices using `covid19-api-stg-us-east-1-policy.json`.
+
 
 ## API Gateway
 

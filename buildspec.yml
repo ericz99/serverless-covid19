@@ -3,16 +3,23 @@ version: 0.2
 phases:
   install:
     commands:
-      - echo Installing Node 12...
-      - curl -sL https://deb.nodesource.com/setup_12.x | bash -
-      - apt install -y nodejs
       - npm install --silent --no-progress -g npm
       - npm install --silent --no-progress -g serverless
   pre_build:
     commands:
       - echo Installing dependencies...
-      - npm run setup
+      - npm install --silent --no-progress
   build:
     commands:
-      - echo Deploying to serverless...
-      - serverless deploy
+      - Running Unit Testing
+      - npm run test
+      - mkdir -p target/stg
+      - mkdir target/prod
+      - serverless package --package target/stg --stage stg -v -r us-east-1
+      - serverless package --package target/prod --stage prod -v -r us-east-1
+
+artifacts:
+  files:
+  - target/**/*
+  - serverless.yml
+  - deploy.sh

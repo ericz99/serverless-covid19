@@ -1,3 +1,5 @@
+org: ericz99
+app: serverless-covid19
 # serverless.yml
 
 service: covid-api
@@ -10,16 +12,6 @@ provider:
   timeout: 10 # optional
   tracing:
     lambda: true # optional
-  iamRoleStatements:
-    - Effect: Allow
-      Action:
-        - apigateway:GET
-        - apigateway:HEAD
-        - apigateway:OPTIONS
-        - apigateway:PATCH
-        - apigateway:POST
-        - apigateway:PUT
-        - apigateway:DELETE
 
 functions:
   app:
