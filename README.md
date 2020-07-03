@@ -8,10 +8,10 @@ Before following any step below, be sure to have serverless connected to your AW
 
 1. In your preferred project directory, run `git clone https://github.com/ericz99/serverless-covid19.git .`.
 2. In your root directory please run `npm install` to install all necessary dependencies.
-2.5. OPTIONAL: Only if you didn't install serverless framework, please run `npm install -g serverless`.
-3. Next, configure your project settings, by running `serverless` You should be prompt with questions, so just fill it out.
-4. Finally, once you finish with everything above, you can now run `serverless deploy`.
-5. You should now have a fully functional serverless api application. Please redirect to the URL that is being displayed on your CLI.
+3. OPTIONAL: Only if you didn't install serverless framework, please run `npm install -g serverless`.
+4. Next, configure your project settings, by running `serverless` You should be prompt with questions, so just fill it out.
+5. Finally, once you finish with everything above, you can now run `serverless deploy`.
+6. You should now have a fully functional serverless api application. Please redirect to the URL that is being displayed on your CLI.
 
 ## Automating CI/CD Codepipeline
 
