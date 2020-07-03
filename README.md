@@ -17,7 +17,7 @@ This will be using API Gateway as an event trigger, which will trigger the lambd
 
 - `GET` : Get all cases
 
-# OUTPUT
+### OUTPUT
 
 ```json
 {
@@ -30,6 +30,8 @@ This will be using API Gateway as an event trigger, which will trigger the lambd
 #### /countries
 
 - `GET` : Get all cases by countries
+
+### OUTPUT
 
 ```json
 [
@@ -53,6 +55,8 @@ This will be using API Gateway as an event trigger, which will trigger the lambd
 #### /{country}
 
 - `GET` : Get cases by country
+
+### OUTPUT
 
 ```json
 {
