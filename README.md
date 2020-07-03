@@ -31,8 +31,6 @@ This will be using API Gateway as an event trigger, which will trigger the lambd
 
 - `GET` : Get all cases by countries
 
-# OUTPUT
-
 ```json
 [
     {
