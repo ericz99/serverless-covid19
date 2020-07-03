@@ -1,16 +1,17 @@
 ## Serverless Covid19
 
-Realtime COVID-19 tracker, since the pandemic I wanted to track each cases in realtime using serverless architecture, which will eliminate the need for server.
+Realtime COVID-19 tracker API, since the pandemic I wanted to track each cases in realtime using serverless architecture, which will eliminate the need for server.
 
 ## Installation
 
 1. In your preferred project directory, run `git clone https://github.com/ericz99/serverless-covid19.git .`.
 2. In your root directory please run `./deploy.sh` OR `bash deploy.sh` to install all necessary dependencies.
-3. By running `deploy.sh` it should already deploy the serverless, and basically the web application in the cloud.
+3. By running `deploy.sh` it should first run through CI/CD Codepipeline to test all API, then automatically deploy the serverless into cloud.
+4. You should now have a fully functional serverless api application.
 
 ## API Gateway
 
-This will be using API Gateway as an event trigger, which will trigger the lambda function, aka our express server. After successfully deploying your serverless application + the web application you should be given the web application URL + API Gateway endpoint.
+This will be using API Gateway as an event trigger, which will trigger the lambda function, aka our express server. After successfully deploying your serverless application, you should get the production endpoint for your API Gateway.
 
 #### /all
 

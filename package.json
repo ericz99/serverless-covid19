@@ -4,20 +4,32 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "local": "serverless offline",
+    "setup": "bash ./script/deploy.sh",
+    "test": "mocha --timeout 10000"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "eslint": "^7.3.1",
+    "chai-http": "^4.3.0",
+    "eslint": "^6.6.0",
     "eslint-config-node": "^4.1.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^3.1.4",
-    "prettier": "^2.0.5"
+    "prettier": "^2.0.5",
+    "serverless-mocha-plugin": "^1.12.0",
+    "serverless-offline": "^6.4.0"
   },
   "dependencies": {
-    "aws-sdk": "^2.708.0"
+    "aws-sdk": "^2.708.0",
+    "axios": "^0.19.2",
+    "body-parser": "^1.19.0",
+    "chai": "^4.2.0",
+    "cheerio": "^1.0.0-rc.3",
+    "express": "^4.17.1",
+    "mocha": "^8.0.1",
+    "serverless-http": "^2.5.0"
   }
 }

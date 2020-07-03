@@ -1,4 +1,3 @@
-const serverless = require('serverless-http');
 const express = require('express');
 const app = express();
 
@@ -77,4 +76,4 @@ app.use((err, req, res, next) => {
   }
 });
 
-module.exports.handler = serverless(app);
+module.exports = app;
