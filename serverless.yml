@@ -12,6 +12,8 @@ provider:
   timeout: 10 # optional
   tracing:
     lambda: true # optional
+  environment:
+    STAGE: ${opt:stage}
 
 functions:
   app:
