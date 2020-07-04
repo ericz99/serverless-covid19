@@ -1,7 +1,7 @@
 app: serverless-covid19
 # serverless.yml
 
-service: covid-api
+service: serverless-covid19
 
 provider:
   name: aws
