@@ -21,10 +21,12 @@ functions:
       - http: ANY /
       - http: 'ANY {proxy+}'
 
-custom:
-  serverless-offline:
-    httpPort: 8080
+# ONLY FOR DEVELOPMENT
+# custom:
+#   serverless-offline:
+#     httpPort: 8080
 
-plugins:
-  - serverless-offline
-  - serverless-mocha-plugin
+# ONLY FOR DEVELOPMENT
+# plugins:
+#   - serverless-offline
+#   - serverless-mocha-plugin
