@@ -22,7 +22,7 @@
         "cloudformation:UpdateStack"
       ],
       "Resource": [
-        "arn:aws:cloudformation:us-east-1:*:stack/covid19-api-stg/*"
+        "arn:aws:cloudformation:us-east-1:*:stack/serverless-covid19-stg/*"
       ]
     },
     {
@@ -49,7 +49,7 @@
         "s3:PutEncryptionConfiguration"
       ],
       "Resource": [
-        "arn:aws:s3:::covid19-api*serverlessdeploy*"
+        "arn:aws:s3:::serverless-covid19*serverlessdeploy*"
       ]
     },
     {
@@ -60,7 +60,7 @@
         "s3:DeleteObject"
       ],
       "Resource": [
-        "arn:aws:s3:::covid19-api*serverlessdeploy*"
+        "arn:aws:s3:::serverless-covid19*serverlessdeploy*"
       ]
     },
     {
@@ -75,7 +75,7 @@
         "lambda:Update*"
       ],
       "Resource": [
-        "arn:aws:lambda:us-east-1:*:function:covid19-api-stg-*"
+        "arn:aws:lambda:us-east-1:*:function:serverless-covid19-stg-*"
       ]
     },
     {
@@ -112,14 +112,14 @@
         "iam:DeleteRole"
       ],
       "Resource": [
-        "arn:aws:iam::*:role/covid19-api-stg-us-east-1-lambdaRole"
+        "arn:aws:iam::*:role/serverless-covid19-stg-us-east-1-lambdaRole"
       ]
     },
     {
       "Effect": "Allow",
       "Action": "sqs:*",
       "Resource": [
-        "arn:aws:sqs:*:*:covid19-api-stg-us-east-1"
+        "arn:aws:sqs:*:*:serverless-covid19-stg-us-east-1"
       ]
     },
     {
@@ -170,7 +170,7 @@
         "events:Delete*"
       ],
       "Resource": [
-        "arn:aws:events:*:*:rule/covid19-api-stg-us-east-1"
+        "arn:aws:events:*:*:rule/serverless-covid19-stg-us-east-1"
       ]
     },
     {
@@ -179,7 +179,7 @@
         "events:DescribeRule"
       ],
       "Resource": [
-        "arn:aws:events:us-east-1:*:rule/covid19-api-stg-*"
+        "arn:aws:events:us-east-1:*:rule/serverless-covid19-stg-*"
       ]
     }
   ]
