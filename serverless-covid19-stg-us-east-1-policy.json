@@ -46,7 +46,8 @@
         "s3:ListBucketVersions",
         "s3:PutAccelerateConfiguration",
         "s3:GetEncryptionConfiguration",
-        "s3:PutEncryptionConfiguration"
+        "s3:PutEncryptionConfiguration",
+        "s3:PutBucketAcl"
       ],
       "Resource": [
         "arn:aws:s3:::serverless-covid19*serverlessdeploy*"
