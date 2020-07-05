@@ -13,13 +13,6 @@ Before following any step below, be sure to have serverless connected to your AW
 5. Finally, once you finish with everything above, you can now run `serverless deploy`.
 6. You should now have a fully functional serverless api application. Please redirect to the URL that is being displayed on your CLI.
 
-## Automating CI/CD Codepipeline
-
-If you're planning on using any CI/CD Codepipeline, then please follow the guide below.
-
-1. Please create an new IAM polices using `covid19-api-stg-us-east-1-policy.json`.
-
-
 ## API Gateway
 
 This will be using API Gateway as an event trigger, which will trigger the lambda function, aka our express server. After successfully deploying your serverless application, you should get the production endpoint for your API Gateway.
