@@ -4,7 +4,8 @@ phases:
   install:
     commands:
       - npm install --silent --no-progress -g npm
-      - npm install --silent --no-progress -g serverless@1.55.1
+      - npm uninstall --slient --no-progress -g serverless
+      - npm install --silent --no-progress -g serverless
   pre_build:
     commands:
       - echo Installing dependencies...
