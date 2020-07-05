@@ -13,24 +13,6 @@ provider:
     lambda: true # optional
   environment:
     STAGE: ${opt:stage}
-  iamRoleStatements: 
-    - Effect: 'Allow'
-      Action:
-        - 's3:ListBucket'
-        - "s3:GetBucketLocation"
-        - "s3:CreateBucket"
-        - "s3:DeleteBucket"
-        - "s3:ListBucket"
-        - "s3:ListBucketVersions"
-        - "s3:PutAccelerateConfiguration"
-        - "s3:GetEncryptionConfiguration"
-        - "s3:PutEncryptionConfiguration"
-        - "s3:PutBucketAcl"
-      Resource:
-        Fn::Join:
-          - ''
-          - - 'arn:aws:s3:::'
-            - Ref: ServerlessDeploymentBucket
 
 functions:
   app:
