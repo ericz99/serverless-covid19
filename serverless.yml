@@ -37,11 +37,13 @@ functions:
       - http: 'ANY {proxy+}'
 
 # ONLY FOR DEVELOPMENT
-# custom:
-#   serverless-offline:
-#     httpPort: 8080
+custom:
+  serverless-offline:
+    httpPort: 8080
+  output:
+    file: .build/stack.json # where stack output should be stored by the serverless-stack-output plugin
 
 # ONLY FOR DEVELOPMENT
-# plugins:
-#   - serverless-offline
-#   - serverless-mocha-plugin
+plugins:
+  - serverless-offline
+  - serverless-stack-output
